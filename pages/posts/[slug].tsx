@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/layout/container";
 import PostBody from "../../components/elements/post/post-body";
-import MoreStories from "../../components/sections/more-stories";
+
 import Header from "../../components/sections/header";
 import PostHeader from "../../components/elements/post/post-header";
 import Avatar from "../../components/elements/avatar";
@@ -12,6 +12,7 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from "../../lib/api";
 import PostTitle from "../../components/elements/post/post-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
+import MorePosts from "@components/sections/more-posts";
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -43,7 +44,7 @@ export default function Post({ post, morePosts, preview }) {
             </article>
 
             <SectionSeparator />
-            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            {morePosts.length > 0 && <MorePosts posts={morePosts} />}
           </>
         )}
       </Container>

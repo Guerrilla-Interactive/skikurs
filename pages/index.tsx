@@ -1,10 +1,11 @@
 import Container from "@components/layout/container";
+import MorePosts from "@components/sections/more-posts";
 import MoreStories from "@components/sections/more-stories";
 
 import Intro from "@components/sections/intro";
 import Layout from "@components/layout/layout";
 import { getAllPostsForHome } from "@lib/api";
-import { getAllStoriesForHome } from "@lib/api";
+import { getAllStoriesForHome } from "@lib/api/stories";
 import Head from "next/head";
 import { CMS_NAME } from "@lib/constants";
 
@@ -20,8 +21,8 @@ export default function Index({ allPosts, allStories, preview }) {
         <Container>
           <Intro />
 
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-          {moreStories.length > 0 && <MoreStories posts={moreStories} />}
+          {morePosts.length > 0 && <MorePosts posts={morePosts} />}
+          {moreStories.length > 0 && <MoreStories stories={moreStories} />}
         </Container>
       </Layout>
     </>

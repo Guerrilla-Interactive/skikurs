@@ -27,7 +27,11 @@
       ],
       "@lib/*": [
         "lib/*"
+      ],
+      "@sanity/*": [
+        "sanity/*"
       ]
+      
     },
     "incremental": true
   },

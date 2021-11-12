@@ -1,15 +1,15 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Container from "../../components/layout/container";
-import PostBody from "../../components/elements/post/post-body";
+import StoryBody from "../../components/elements/story/story-body";
 import MoreStories from "../../components/sections/more-stories";
 import Header from "../../components/sections/header";
-import PostHeader from "../../components/elements/post/post-header";
+import StoryHeader from "../../components/elements/story/story-header";
 import Avatar from "../../components/elements/avatar";
 import SectionSeparator from "../../components/old/section-separator";
 import Layout from "../../components/layout/layout";
-import { getAllStoriesWithSlug, getStoryAndMoreStories } from "../../lib/api";
-import PostTitle from "../../components/elements/post/post-title";
+import { getAllStoriesWithSlug, getStoryAndMoreStories } from "@lib/api/stories";
+import StoryTitle from "../../components/elements/story/story-title";
 import Head from "next/head";
 import { CMS_NAME } from "../../lib/constants";
 
@@ -23,7 +23,7 @@ export default function Story({ story, moreStories, preview }) {
             <Container>
                 <Header />
                 {router.isFallback ? (
-                    <PostTitle>Loading…</PostTitle>
+                    <StoryTitle>Loading…</StoryTitle>
                 ) : (
                     <>
                         <article>
@@ -31,19 +31,19 @@ export default function Story({ story, moreStories, preview }) {
                                 <title>
                                     {story.title} | Next.js Blog Example with {CMS_NAME}
                                 </title>
-                                {/* <meta property="og:image" content={post.ogImage.url} /> */}
+                                {/* <meta property="og:image" content={story.ogImage.url} /> */}
                             </Head>
-                            <PostHeader
+                            <StoryHeader
                                 title={story.title}
                                 coverImage={story.coverImage}
                                 date={story.date}
                                 author={story.author}
                             />
-                            <PostBody content={story.body} />
+                            <StoryBody content={story.body} />
                         </article>
 
                         <SectionSeparator />
-                        {moreStories.length > 0 && <MoreStories posts={moreStories} />}
+                        {moreStories.length > 0 && <MoreStories stories={moreStories} />}
                     </>
                 )}
             </Container>
