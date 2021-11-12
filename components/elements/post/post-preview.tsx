@@ -1,8 +1,8 @@
-import Avatar from "./elements/avatar";
-import Date from "./elements/date";
-import CoverImage from "./elements/cover-image";
+import Avatar from "@components/elements/avatar";
+import Date from "@components/elements/date";
+import CoverImage from "@components/elements/cover-image";
 import Link from "next/link";
-import { imageBuilder } from "../lib/sanity";
+import { imageBuilder } from "@lib/sanity";
 export default function PostPreview({
   title,
   coverImage,
