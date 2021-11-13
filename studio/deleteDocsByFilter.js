@@ -15,7 +15,7 @@ const client = sanityClient({
   projectId: "r66a5csd",
   dataset: "production",
   apiVersion: "2021-11-12", // use current UTC date - see "specifying API version"!
-  token: "", // or leave blank for unauthenticated usage
+  token: " ", // or leave blank for unauthenticated usage
   useCdn: true, // `false` if you want to ensure fresh data
 });
 
