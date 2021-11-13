@@ -13,7 +13,7 @@ export default () =>
   S.list()
     .title("Innhold")
     .items([
-      S.documentTypeListItem("happenings").icon(() => (
+      S.documentTypeListItem("happening").icon(() => (
         <span>
           <BsCalendar2Event />
         </span>
@@ -57,7 +57,7 @@ export default () =>
           ![
             "footer",
             "story",
-            "happenings",
+            "happening",
             "author",
             "category",
             "header",

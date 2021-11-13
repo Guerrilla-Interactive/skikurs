@@ -13,7 +13,7 @@ import menuItem from "./modules/header/menuItem";
 // We import object and document schemas
 import blockContent from "./blockContent";
 import category from "./category";
-import happenings from "./happenings";
+import happening from "./happening";
 import story from "./story";
 import author from "./author";
 
@@ -26,7 +26,7 @@ export default createSchema({
   types: schemaTypes.concat([
     // The following are document types which will appear
     // in the studio.
-    happenings,
+    happening,
     story,
     author,
     category,

@@ -1,6 +1,6 @@
 export default {
-  name: "happenings",
-  title: "Happenings",
+  name: "happening",
+  title: "Program",
   type: "document",
   fields: [
     {
