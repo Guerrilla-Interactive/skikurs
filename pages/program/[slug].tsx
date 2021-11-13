@@ -36,8 +36,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
               <HappeningHeader
                 title={happening.title}
                 coverImage={happening.coverImage}
-                date={happening.date}
-                author={happening.author}
+
               />
               <HappeningBody content={happening.body} />
             </article>
