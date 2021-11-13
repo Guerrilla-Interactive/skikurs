@@ -23,7 +23,7 @@ export default function Index({ allStories, allHappenings, preview }) {
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
         <Container>
-          <Intro />
+
           {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
           {moreStories.length > 0 && <MoreStories stories={moreStories} />}
 

@@ -21,7 +21,7 @@ export default function Story({ story, moreStories, preview }) {
     return (
         <Layout preview={preview}>
             <Container>
-                <Header />
+
                 {router.isFallback ? (
                     <StoryTitle>Loading…</StoryTitle>
                 ) : (

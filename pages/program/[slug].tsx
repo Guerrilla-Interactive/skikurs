@@ -21,7 +21,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <Header />
+
         {router.isFallback ? (
           <HappeningTitle>Loading…</HappeningTitle>
         ) : (
