@@ -3,8 +3,12 @@ import createSchema from "part:@sanity/base/schema-creator";
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-
 import custompage from "./custom-page";
+
+// 1. Header
+import menu from "./modules/header/menu";
+import header from "./modules/header/header";
+import menuItem from "./modules/header/menuItem";
 
 // We import object and document schemas
 import blockContent from "./blockContent";
@@ -26,6 +30,12 @@ export default createSchema({
     story,
     author,
     category,
+
+    // 1. Header
+    menu,
+    header,
+    menuItem,
+
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
