@@ -1,11 +1,11 @@
 import Avatar from "@components/elements/avatar";
-import CoverImage from "@components/elements/happening/happening-cover-image";
-import StoryTitle from "@components/elements/story/story-title";
+import CoverImage from "@components/elements/cover-image";
+import HappeningTitle from "@components/elements/happening/happening-title";
 import { imageBuilder } from "@lib/sanity";
-export default function StoryHeader({ title, coverImage, date, author }) {
+export default function HappeningHeader({ title, coverImage, date, author }) {
   return (
     <>
-      <StoryTitle>{title}</StoryTitle>
+      <HappeningTitle>{title}</HappeningTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar name={author?.name} picture={author?.picture} />
       </div>

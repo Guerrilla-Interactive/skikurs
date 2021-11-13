@@ -7,7 +7,7 @@ import custompage from "./custom-page";
 
 // 1. Header
 import menu from "./modules/header/menu";
-import header from "./modules/header/header";
+import header from "./header";
 import menuItem from "./modules/header/menuItem";
 
 // We import object and document schemas
