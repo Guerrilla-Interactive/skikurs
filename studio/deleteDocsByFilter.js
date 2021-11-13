@@ -20,6 +20,6 @@ const client = sanityClient({
 });
 
 client
-  .delete({ query: '*[_type == "stories"][0...999]' })
+  .delete({ query: '*[_type == "happenings"][0...999]' })
   .then(console.log)
   .catch(console.error);
