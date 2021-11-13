@@ -26,9 +26,7 @@ export default function PostPreview({
           <a className="hover:underline">{title}</a>
         </Link>
       </h3>
-      <div className="mb-4 text-lg">
-        <Date dateString={date} />
-      </div>
+
       <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
       <Avatar name={author?.name} picture={author?.picture} />
     </div>

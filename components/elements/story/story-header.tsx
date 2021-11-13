@@ -1,5 +1,4 @@
 import Avatar from "@components/elements/avatar";
-import Date from "@components/elements/date";
 import CoverImage from "@components/elements/cover-image";
 import StoryTitle from "@components/elements/story/story-title";
 import { imageBuilder } from "@lib/sanity";
@@ -11,7 +10,7 @@ export default function StoryHeader({ title, coverImage, date, author }) {
         <Avatar name={author?.name} picture={author?.picture} />
       </div>
       <div className="mb-8 -mx-5 md:mb-16 sm:mx-0">
-        <CoverImage title={title} imageObject={coverImage} url={coverImage} />
+        <CoverImage title={title} imageObject={coverImage} url={coverImage} slug={undefined} />
       </div>
       <div className="max-w-2xl mx-auto">
         <div className="block mb-6 md:hidden">
