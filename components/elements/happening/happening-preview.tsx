@@ -8,16 +8,14 @@ export default function HappeningPreview({
   slug,
 }) {
   return (
-    <div>
-      <div className="grid grid-cols-12 mb-5 bg-transparent">
-        <div className="col-span-9">
-          <CoverImage
-            slug={slug}
-            title={title}
-            imageObject={coverImage}
-            url={imageBuilder(coverImage).url()}
-          />
-        </div>
+    <div className="">
+      <div className=" mb-10 w-[80%] bg-transparent">
+        <CoverImage
+          slug={slug}
+          title={title}
+          imageObject={coverImage}
+          url={imageBuilder(coverImage).url()}
+        />
       </div>
       <div className="grid grid-cols-3 gap-12">
         {/* col 1 */}
@@ -34,7 +32,7 @@ export default function HappeningPreview({
               <a className="hover:underline">{title}</a>
             </Link>
           </h3>
-          <p className="mb-4 text-lg leading-relaxed">Vi forstår at det er ekstra krevende med innsending av video, og utvider fristen for innsending til torsdag 25. </p></div>
+          <p className="mb-4 text-lg leading-relaxed max-w-[20rem]">Vi forstår at det er ekstra krevende med innsending av video, og utvider fristen for innsending til torsdag 25. </p></div>
 
       </div>
     </div>

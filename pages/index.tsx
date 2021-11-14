@@ -34,7 +34,6 @@ export default function Index({ allStories, allHappenings, preview }) {
             {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
           </div>
 
-          {moreStories.length > 0 && <MoreStories stories={moreStories} />}
 
         </Container>
       </Layout>

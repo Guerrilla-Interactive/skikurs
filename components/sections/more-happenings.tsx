@@ -15,13 +15,13 @@ SwiperCore.use([Pagination]);
 
 export default function MoreHappenings({ happenings }) {
   return (
-    <section className="">
+    <section className="min-h-[45rem] h-[35rem] pb-[3rem] ">
       <Swiper slidesPerView={3} spaceBetween={60} pagination={{
         "clickable": true
       }} className="overflow-visible mySwiper">
 
 
-        <SwiperSlide className="ml-[-26vw]"></SwiperSlide>
+        <SwiperSlide className="ml-[-26.5vw]"></SwiperSlide>
         {happenings.map((happening) => (
 
           <SwiperSlide>
@@ -36,6 +36,7 @@ export default function MoreHappenings({ happenings }) {
         ))}
 
       </Swiper>
+      <div className="ml-[7.5vw]">Se alle arrangementer</div>
 
     </section>
   );
