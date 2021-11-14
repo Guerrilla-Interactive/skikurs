@@ -11,6 +11,7 @@ import { getAllHappeningsForHome } from "@lib/api/happenings";
 import Head from "next/head";
 import { CMS_NAME } from "@lib/constants";
 import LeftCurveHeaderBackground from "@components/elements/backgrounds/LeftCurveHeaderBackground";
+import RightCurveHeaderBackground from "@components/elements/backgrounds/RightCurveHeaderBackground";
 
 export default function Index({ allStories, allHappenings, preview }) {
 
@@ -24,12 +25,15 @@ export default function Index({ allStories, allHappenings, preview }) {
           <title>Next.js Blog Example with {CMS_NAME}</title>
         </Head>
         <Container>
-          <LeftCurveHeaderBackground />
-          <div className="md:max-w-[60vw]">
+          <RightCurveHeaderBackground />
+          <div className="mt-[12.5rem] md:max-w-[60vw]">
             <h4 className="text-3xl text-white text-opacity-70">Hurra! Spin Off er 20 år!</h4>
             <h1 className="mb-6 text-6xl font-bold leading-tight tracking-tighter text-center text-white md:text-7xl lg:text-8xl md:leading-none md:text-left">Velkommen til <br /> Spin Off festivalen </h1>
           </div>
-          {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
+          <div className="mt-[22.5rem]">
+            {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
+          </div>
+
           {moreStories.length > 0 && <MoreStories stories={moreStories} />}
 
         </Container>
