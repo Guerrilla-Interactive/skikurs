@@ -22,6 +22,17 @@ export default {
         maxLength: 96,
       },
     },
+    {
+      name: "infoboxes",
+      type: "array",
+      title: "Info boxes",
+      of: [
+        { type: "when" }, // hero.js (same applies for the other types)
+        { type: "where" },
+        { type: "who" },
+        { type: "what" },
+      ],
+    },
 
     {
       name: "mainImage",

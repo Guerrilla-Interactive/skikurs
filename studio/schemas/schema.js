@@ -10,10 +10,16 @@ import menu from "./modules/header/menu";
 import header from "./header";
 import menuItem from "./modules/header/menuItem";
 
+// 2. Happening
+import happening from "./happening";
+import what from "./modules/infoboxes/what";
+import who from "./modules/infoboxes/who";
+import when from "./modules/infoboxes/when";
+import where from "./modules/infoboxes/where";
+
 // We import object and document schemas
 import blockContent from "./blockContent";
 import category from "./category";
-import happening from "./happening";
 import story from "./story";
 import author from "./author";
 
@@ -35,6 +41,12 @@ export default createSchema({
     menu,
     header,
     menuItem,
+
+    // 2. Happening
+    what,
+    who,
+    when,
+    where,
 
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas

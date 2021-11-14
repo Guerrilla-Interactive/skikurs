@@ -2,10 +2,16 @@ import client, { previewClient } from '@lib/sanity'
 const getClient = (preview) => (preview ? previewClient : client)
 
 
+
+
+
+
 const happeningFields = `
 _id,
 name,
 body,
+
+infoboxes,
 subtitle,
 title,
 excerpt,
@@ -68,7 +74,7 @@ export async function getHappeningAndMoreHappenings(slug, preview) {
         curClient.fetch(
             `*[_type == "happening" && slug.current != $slug] | order(publishedAt desc, _updatedAt desc){
       ${happeningFields}
-    }[0...2]`,
+    }`,
             { slug }
         ),
     ])
