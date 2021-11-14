@@ -35,6 +35,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
               </Head>
               <HappeningHeader
                 title={happening.title}
+                subtitle={happening.subtitle}
                 coverImage={happening.coverImage}
 
               />

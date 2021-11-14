@@ -5,6 +5,8 @@ const getClient = (preview) => (preview ? previewClient : client)
 const happeningFields = `
 _id,
 name,
+body,
+subtitle,
 title,
 excerpt,
 'slug': slug.current,
@@ -59,16 +61,6 @@ export async function getHappeningAndMoreHappenings(slug, preview) {
             `*[_type == "happening" && slug.current == $slug] | order(_updatedAt desc) {
       ${happeningFields}
       body,
-      'comments': *[
-                    _type == "comment" && 
-                    post._ref == ^._id && 
-                    approved == true] {
-        _id, 
-        name, 
-        email, 
-        comment, 
-        _createdAt
-      }
     }`,
             { slug }
         )
@@ -76,7 +68,6 @@ export async function getHappeningAndMoreHappenings(slug, preview) {
         curClient.fetch(
             `*[_type == "happening" && slug.current != $slug] | order(publishedAt desc, _updatedAt desc){
       ${happeningFields}
-      body,
     }[0...2]`,
             { slug }
         ),
