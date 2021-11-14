@@ -1,9 +1,11 @@
-/* purgecss start ignore */
 @tailwind base;
+
+/* purgecss start ignore */
+
 @tailwind components;
-article a {
-  color: rgb(49, 49, 182);
-  text-decoration: underline;
-}
+
+/* Start purging... */
 @tailwind utilities;
+/* Stop purging. */
+
 /* purgecss end ignore */

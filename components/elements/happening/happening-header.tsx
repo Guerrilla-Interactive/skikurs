@@ -9,9 +9,9 @@ export default function HappeningHeader({ title, subtitle, coverImage }) {
       <HappeningTitle>{title}</HappeningTitle>
       <HappeningSubtitle>{subtitle}</HappeningSubtitle>
 
-      <div className="mb-8 -mx-5 md:mb-16 sm:mx-0">
-        {/* <CoverImage title={title} imageObject={coverImage} url={coverImage} slug={undefined} /> */}
-      </div>
+      {/* <div className="mb-8 -mx-5 md:mb-16 sm:mx-0">
+        <CoverImage title={title} imageObject={coverImage} url={coverImage} slug={undefined} />
+      </div> */}
     </>
   );
 }
