@@ -150,7 +150,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
 
 
                 {/* Col 2 */}
-                <div className="md:mt-16"><HappeningBody content={happening.body} /></div>
+                <div className="md:mt-[10rem]"><HappeningBody content={happening.body} /></div>
 
               </div>
 
