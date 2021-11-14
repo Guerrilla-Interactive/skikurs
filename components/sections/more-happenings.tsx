@@ -1,8 +1,10 @@
 import HappeningPreview from "../elements/happening/happening-preview";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
 
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
 
 
 // import Swiper core and required modules
