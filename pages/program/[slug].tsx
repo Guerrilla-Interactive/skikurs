@@ -11,6 +11,7 @@ import { getAllHappeningsWithSlug, getHappeningAndMoreHappenings } from "@lib/ap
 import HappeningTitle from "../../components/elements/happening/happening-title";
 import Head from "next/head";
 import { SITE_NAME } from "../../lib/constants";
+import LeftCurveHeaderBackground from "@components/elements/backgrounds/LeftCurveHeaderBackground";
 
 export default function Happening({ happening, moreHappenings, preview }) {
   const router = useRouter();
@@ -26,8 +27,6 @@ export default function Happening({ happening, moreHappenings, preview }) {
         ) : (
           <>
 
-
-
             <article>
               <Head>
                 <title>
@@ -37,12 +36,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
               </Head>
 
               {/* Background element top */}
-              <div className="absolute top-0 left-0 z-[-10] ">
-                <svg width="100vw" preserveAspectRatio="none" height="45rem" viewBox="0 0 1440 706" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1440 -2C1240.19 360.342 395.538 620.619 0 706V-1.46526C577.244 -1.46524 1440 -2 1440 -2Z" fill="black" />
-                </svg>
-
-              </div>
+              <LeftCurveHeaderBackground />
 
               {/* Row 1 - Header*/}
               <div className="mt-32 mb-20">
@@ -56,14 +50,8 @@ export default function Happening({ happening, moreHappenings, preview }) {
               {/* Row 2 - Main Info*/}
               <div className="grid gap-12 md:grid-cols-2 ">
 
-
-                {/* Col 1 - Info boxes  */}
-
-
+                {/* Col 1   */}
                 <AllInfoboxes happenings={happening} />
-
-
-
 
                 {/* Col 2 */}
                 <div className="mt-[10rem]"><HappeningBody content={happening.body} /></div>
