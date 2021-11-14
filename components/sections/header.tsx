@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     // Row
-    <div className="grid items-center grid-flow-col mt-8 mb-20">
+    <section className="grid items-center grid-flow-col mt-8 mb-20 section">
       {/* Column 1 */}
       <div>
         <h2 className="font-bold leading-tight tracking-tight ext-2xl md:text-4xl md:tracking-tighter">
@@ -21,7 +21,7 @@ export default function Header() {
           <div>Delta</div>
         </nav>
       </div>
-    </div>
+    </section>
 
 
 

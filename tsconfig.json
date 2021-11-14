@@ -30,6 +30,9 @@
       ],
       "@modules/*": [
         "studio/schemas/modules/*"
+      ],
+      "@styles/*": [
+        "styles/*"
       ]
       
     },

@@ -26,10 +26,10 @@ export default function Index({ allStories, allHappenings, preview }) {
         </Head>
         <Container>
           <RightCurveHeaderBackground />
-          <div className="mt-[12.5rem] md:max-w-[60vw]">
+          <section className="section mt-[12.5rem] ">
             <h4 className="text-3xl text-white text-opacity-70">Hurra! Spin Off er 20 år!</h4>
             <h1 className="mb-6 text-6xl font-bold leading-tight tracking-tighter text-center text-white md:text-7xl lg:text-8xl md:leading-none md:text-left">Velkommen til <br /> Spin Off festivalen </h1>
-          </div>
+          </section>
           <div className="mt-[22.5rem]">
             {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
           </div>

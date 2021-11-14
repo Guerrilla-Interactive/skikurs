@@ -9,20 +9,34 @@ export default function HappeningPreview({
 }) {
   return (
     <div>
-      <div className="mb-5">
-        <CoverImage
-          slug={slug}
-          title={title}
-          imageObject={coverImage}
-          url={imageBuilder(coverImage).url()}
-        />
+      <div className="grid grid-cols-12 mb-5 bg-transparent">
+        <div className="col-span-9">
+          <CoverImage
+            slug={slug}
+            title={title}
+            imageObject={coverImage}
+            url={imageBuilder(coverImage).url()}
+          />
+        </div>
       </div>
-      <h3 className="mb-3 text-3xl leading-snug">
-        <Link as={`/program/${slug}`} href="/program/[slug]">
-          <a className="hover:underline">{title}</a>
-        </Link>
-      </h3>
-      <p className="mb-4 text-lg leading-relaxed">{excerpt}</p>
+      <div className="grid grid-cols-3 gap-12">
+        {/* col 1 */}
+
+        <div className="col-span-1 text-left">
+          <div> Tidspunkt</div>
+          <div> Date </div>
+          <div> Where</div>
+          <button className="px-12 py-4 mt-12 text-white bg-black text-md"> Les mer </button>
+        </div>
+        <div className="col-span-2 text-left">
+          <h3 className="mb-3 text-2xl font-semibold ">
+            <Link as={`/program/${slug}`} href="/program/[slug]">
+              <a className="hover:underline">{title}</a>
+            </Link>
+          </h3>
+          <p className="mb-4 text-lg leading-relaxed">Vi forstår at det er ekstra krevende med innsending av video, og utvider fristen for innsending til torsdag 25. </p></div>
+
+      </div>
     </div>
   );
 }

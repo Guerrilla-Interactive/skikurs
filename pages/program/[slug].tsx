@@ -39,16 +39,16 @@ export default function Happening({ happening, moreHappenings, preview }) {
               <LeftCurveHeaderBackground />
 
               {/* Row 1 - Header*/}
-              <div className="mt-32 mb-20">
+              <section className="mt-32 mb-20 section">
                 <HappeningHeader
                   title={happening.title}
                   subtitle={happening.subtitle}
                   coverImage={happening.coverImage}
                 />
-              </div>
+              </section>
 
               {/* Row 2 - Main Info*/}
-              <div className="grid gap-12 md:grid-cols-2 ">
+              <section className="grid gap-12 section md:grid-cols-2 ">
 
                 {/* Col 1   */}
                 <AllInfoboxes happenings={happening} />
@@ -57,13 +57,13 @@ export default function Happening({ happening, moreHappenings, preview }) {
                 <div className="mt-[10rem]"><HappeningBody content={happening.body} /></div>
 
 
-              </div>
+              </section>
 
 
 
               {/* Row 3 - Additional Info */}
 
-              <div className="grid gap-12 mt-[10rem] md:grid-cols-2 ">
+              <section className="section grid gap-12 mt-[10rem] md:grid-cols-2 ">
                 {/* Col 1 */}
                 <div className="max-w-xl">
                   <h3 className="mb-6 text-xl font-semibold">Title</h3>
@@ -80,7 +80,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
                   </div>
                 </div>
 
-              </div>
+              </section>
 
 
 
