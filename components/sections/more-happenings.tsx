@@ -24,9 +24,9 @@ export default function MoreHappenings({ happenings }) {
         <SwiperSlide className="ml-[-26.5vw]"></SwiperSlide>
         {happenings.map((happening) => (
 
-          <SwiperSlide>
+          <SwiperSlide key={happening.slug}>
             <HappeningPreview
-              key={happening.slug}
+
               title={happening.title}
               coverImage={happening.coverImage}
               slug={happening.slug}
