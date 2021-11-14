@@ -26,7 +26,7 @@ export default function MoreHappenings({ happenings }) {
 
           <SwiperSlide key={happening.slug}>
             <HappeningPreview
-
+              key={happening.slug}
               title={happening.title}
               coverImage={happening.coverImage}
               slug={happening.slug}
