@@ -7,24 +7,6 @@
 @tailwind utilities;
 /* Stop purging. */
 
-/* purgecss end ignore */
-
-/* SECTIONS */
-
-.section {
-  width: 85vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-full {
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* SWIPER */
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -33,7 +15,6 @@
 .swiper-slide {
   text-align: left;
 
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -60,3 +41,21 @@
   margin-left: 7.5vw;
   margin-top: 10rem !important;
 }
+
+/* purgecss end ignore */
+
+/* SECTIONS */
+
+.section {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-full {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SWIPER */
