@@ -11,7 +11,7 @@ export default function HappeningBody({ content }) {
         className={markdownStyles.markdown}
       />
 
-      <button className="px-24 py-4 mt-12 text-white bg-black text-md">Søk deltakelse</button>
+
     </div>
   );
 }

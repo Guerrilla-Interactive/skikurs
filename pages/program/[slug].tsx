@@ -10,6 +10,7 @@ import Layout from "../../components/layout/layout";
 import { getAllHappeningsWithSlug, getHappeningAndMoreHappenings } from "@lib/api/happenings";
 import HappeningTitle from "../../components/elements/happening/happening-title";
 import Head from "next/head";
+import Button from "@components/elements/button";
 import { SITE_NAME } from "../../lib/constants";
 import LeftCurveHeaderBackground from "@components/elements/backgrounds/LeftCurveHeaderBackground";
 
@@ -51,40 +52,30 @@ export default function Happening({ happening, moreHappenings, preview }) {
               <section className="grid gap-12 section md:grid-cols-2 ">
 
                 {/* Col 1   */}
-                <AllInfoboxes happenings={happening} />
+                <AllInfoboxes happenings={happening.infoboxes} />
 
                 {/* Col 2 */}
-                <div className="mt-[10rem]"><HappeningBody content={happening.body} /></div>
-
-
+                <div className="mt-[10rem]">
+                  <HappeningBody content={happening.body} />
+                  <Button link="/" text="Søk deltakelse" />
+                </div>
               </section>
 
-
-
               {/* Row 3 - Additional Info */}
-
               <section className="section grid gap-12 mt-[10rem] md:grid-cols-2 ">
                 {/* Col 1 */}
                 <div className="max-w-xl">
                   <h3 className="mb-6 text-xl font-semibold">Title</h3>
-                  <div>Spin Off samarbeider med PRODA om diverse danseklasser for profesjonelle. Klassene foregår i PRODAs lokaler på Rom for Dans i uke 21-22, og består av tidligere Spin Off-elever. Mer info og timeplan er tilgjengelig via proda.no/timeplan
-
-
-                  </div>
+                  <div><HappeningBody content={happening.textBottomLeft} /></div>
                 </div>
 
                 {/* Col 2 */}
                 <div className="max-w-xl">
                   <h3 className="mb-6 text-xl">Title</h3>
-                  <div>Spin Off samarbeider med PRODA om diverse danseklasser for profesjonelle. Klassene foregår i PRODAs lokaler på Rom for Dans i uke 21-22, og består av tidligere Spin Off-elever. Mer info og timeplan er tilgjengelig via proda.no/timeplan
-                  </div>
+                  <div>  <HappeningBody content={happening.textBottomRight} /></div>
                 </div>
 
               </section>
-
-
-
-
             </article>
 
             <SectionSeparator />

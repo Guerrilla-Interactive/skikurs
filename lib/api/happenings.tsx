@@ -8,13 +8,15 @@ const getClient = (preview) => (preview ? previewClient : client)
 
 const happeningFields = `
 _id,
+_type,
 name,
 body,
-
 infoboxes,
 subtitle,
 title,
 excerpt,
+textBottomLeft,
+textBottomRight,
 'slug': slug.current,
 'coverImage': mainImage,
 `

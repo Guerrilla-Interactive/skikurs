@@ -9,11 +9,6 @@ export default {
       type: "string",
     },
     {
-      name: "subtitle",
-      title: "Subtitle",
-      type: "string",
-    },
-    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -23,17 +18,10 @@ export default {
       },
     },
     {
-      name: "infoboxes",
-      type: "array",
-      title: "Info boxes",
-      of: [
-        { type: "when" }, // hero.js (same applies for the other types)
-        { type: "where" },
-        { type: "who" },
-        { type: "what" },
-      ],
+      name: "subtitle",
+      title: "Subtitle",
+      type: "string",
     },
-
     {
       name: "mainImage",
       title: "Main image",
@@ -42,9 +30,32 @@ export default {
         hotspot: true,
       },
     },
+
+    {
+      name: "infoboxes",
+      type: "array",
+      title: "Info boxes",
+      of: [
+        { type: "when" },
+        { type: "where" },
+        { type: "who" },
+        { type: "what" },
+      ],
+    },
+
     {
       name: "body",
       title: "Body",
+      type: "blockContent",
+    },
+    {
+      name: "textBottomLeft",
+      title: "Text - Bottom Left",
+      type: "blockContent",
+    },
+    {
+      name: "textBottomRight",
+      title: "Text - Bottom Right",
       type: "blockContent",
     },
   ],
