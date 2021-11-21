@@ -52,6 +52,7 @@ export default {
   preview: {
     select: {
       title: "title",
+      media: "mainImage",
     },
     prepare(selection) {
       const { author } = selection;
