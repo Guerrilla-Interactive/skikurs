@@ -12,7 +12,7 @@ module.exports = {
                 "./pages/**/*.{js,jsx,ts,tsx}",
                 "./components/**/*.{js,jsx,ts,tsx}",
               ],
-              safelist: [swiper - container],
+              safelist: ["swiper-container"],
               defaultExtractor: (content) =>
                 content.match(/[\w-/:]+(?<!:)/g) || [],
             },
