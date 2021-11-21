@@ -17,7 +17,7 @@ SwiperCore.use([Pagination]);
 
 export default function MoreHappenings({ happenings }) {
   return (
-    <section className="min-h-[45rem] h-[35rem] pb-[3rem] ">
+    <section className="min-h-[55rem] h-[35rem] pb-[3rem] ">
       <Swiper slidesPerView={3} spaceBetween={60} pagination={{
         "clickable": true
       }} className="overflow-visible mySwiper">
