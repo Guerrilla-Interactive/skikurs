@@ -12,6 +12,9 @@ import SwiperCore, {
   Pagination
 } from 'swiper';
 
+import 'swiper/css';
+
+
 // install Swiper modules
 SwiperCore.use([Pagination]);
 
