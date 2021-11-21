@@ -1,5 +1,5 @@
-import "../styles/index.css";
-
+import "@styles/index.css";
+import "@styles/swiper.css";
 import React, { useRef, useState } from "react";
 
 import "swiper/css";
