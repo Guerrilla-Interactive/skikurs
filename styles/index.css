@@ -3,28 +3,6 @@
 
 @tailwind components;
 
-/* Start purging... */
-@tailwind utilities;
-/* Stop purging. */
-
-/* purgecss end ignore */
-
-/* SECTIONS */
-
-.section {
-  width: 85vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-full {
-  width: 100vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* SWIPER */
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -60,3 +38,25 @@
   margin-left: 7.5vw;
   margin-top: 10rem !important;
 }
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* purgecss end ignore */
+
+/* SECTIONS */
+
+.section {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-full {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SWIPER */
