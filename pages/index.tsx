@@ -2,14 +2,11 @@ import Container from "@components/layout/container";
 
 import MoreStories from "@components/sections/more-stories";
 import MoreHappenings from "@components/sections/more-happenings";
-
-import Intro from "@components/sections/intro";
 import Layout from "@components/layout/layout";
-
 import { getAllStoriesForHome } from "@lib/api/stories";
 import { getAllHappeningsForHome } from "@lib/api/happenings";
 import Head from "next/head";
-import { CMS_NAME } from "@lib/constants";
+import { SITE_NAME } from "@lib/constants";
 import LeftCurveHeaderBackground from "@components/elements/backgrounds/LeftCurveHeaderBackground";
 import RightCurveHeaderBackground from "@components/elements/backgrounds/RightCurveHeaderBackground";
 
@@ -22,7 +19,7 @@ export default function Index({ allStories, allHappenings, preview }) {
     <>
       <Layout preview={preview}>
         <Head>
-          <title>Next.js Blog Example with {CMS_NAME}</title>
+          <title>Spin Off Festivalen | {SITE_NAME}</title>
         </Head>
         <Container>
           <RightCurveHeaderBackground />
