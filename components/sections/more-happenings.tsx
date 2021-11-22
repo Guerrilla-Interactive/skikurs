@@ -38,7 +38,7 @@ export default function MoreHappenings({ happenings }) {
             />
           </SwiperSlide>
         ))}
-        <SwiperSlide className="ml-[-2.5vw]"></SwiperSlide>
+
       </Swiper>
       <div className="ml-[7.5vw]">Se alle arrangementer</div>
 

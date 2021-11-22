@@ -94,4 +94,9 @@
   min-height: 40vh;
 }
 
+.clip-svg {
+  clip-path: url(#myClip);
+  width: 100vw;
+}
+
 /* purgecss end ignore */

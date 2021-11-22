@@ -27,6 +27,9 @@ export default function Index({ allStories, allHappenings, preview }) {
         html {
           background: black;
         }
+        button {
+          border: 1px solid white;
+        }
       `}</style>
 
 
