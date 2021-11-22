@@ -10,22 +10,25 @@ import HappeningPreviewTwo from "@components/elements/happening/happening-previe
 
 export default function MoreHappeningsTwo({ happenings }) {
     return (
-        <>
-            {happenings.map((happening) => (
 
-                <HappeningPreviewTwo
-                    key={happening.slug}
-                    title={happening.title}
-                    coverImage={happening.coverImage}
-                    slug={happening.slug}
-                    excerpt={happening.excerpt}
-                    time={happening.time}
-                    info={happening.infoboxes}
-                />
 
-            ))}
 
-        </>
+        happenings.map((happening) => (
+
+            <HappeningPreviewTwo
+                key={happening.slug}
+                title={happening.title}
+                coverImage={happening.coverImage}
+                slug={happening.slug}
+                excerpt={happening.excerpt}
+                time={happening.time}
+                info={happening.infoboxes}
+            />
+
+        ))
+
+
+
 
 
 

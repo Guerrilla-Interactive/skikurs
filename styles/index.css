@@ -68,24 +68,24 @@
   grid-adrea: timeAndDate;
 }
 
-#program-flow > .program-item:nth-child(2) {
+#program-flow .program-item:nth-child(2) {
   min-height: 40vh;
 }
 
-#program-flow > .program-item:nth-child(2) {
+#program-flow .program-item:nth-child(2) {
   margin-top: 20rem;
   min-height: 40vh;
 }
 
-#program-flow > .program-item:nth-child(3) {
+#program-flow .program-item:nth-child(3) {
 }
 
-#program-flow > .program-item:nth-child(4) {
+#program-flow .program-item:nth-child(4) {
   margin-top: 20vh;
   min-height: 40vh;
 }
 
-#program-flow > .program-item:nth-child(5) {
+#program-flow .program-item:nth-child(5) {
   margin-top: 20vh;
   min-height: 40vh;
 }

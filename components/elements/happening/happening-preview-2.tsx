@@ -14,7 +14,7 @@ export default function HappeningPreviewTwo({
   time,
 }) {
   return (
-    <div className="">
+    <div className="max-w-2xl program-item">
       <div className=" mb-10 w-[80%] bg-transparent">
         <CoverImageTwo
           slug={slug}

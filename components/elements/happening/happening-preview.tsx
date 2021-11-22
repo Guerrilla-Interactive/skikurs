@@ -13,7 +13,7 @@ export default function HappeningPreview({
   time,
 }) {
   return (
-    <div className="">
+    <div >
       <div className=" mb-10 w-[80%] bg-transparent">
         <CoverImage
           slug={slug}
