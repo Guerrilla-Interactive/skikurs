@@ -16,7 +16,6 @@ import RightCurveHeaderBackground from "@components/elements/backgrounds/RightCu
 export default function Index({ allStories, allHappenings, preview }) {
 
   const moreStories = allStories.slice(0);
-  const moreHappenings = allHappenings.slice(0);
 
   return (
     <>
@@ -31,7 +30,7 @@ export default function Index({ allStories, allHappenings, preview }) {
             <h1 className="mb-6 text-6xl font-bold leading-tight tracking-tighter text-center text-white md:text-7xl lg:text-8xl md:leading-none md:text-left">Velkommen til <br /> Spin Off festivalen </h1>
           </section>
           <div className="mt-[22.5rem]">
-            {moreHappenings.length > 0 && <MoreHappenings happenings={moreHappenings} />}
+            {allHappenings.length > 0 && <MoreHappenings happenings={allHappenings} />}
           </div>
 
 

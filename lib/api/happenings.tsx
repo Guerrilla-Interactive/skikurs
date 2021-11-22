@@ -40,7 +40,6 @@ export async function getPreviewHappeningsBySlug(slug) {
     const data = await getClient(true).fetch(
         `*[_type == "happening" && slug.current == $slug] | order(publishedAt desc){
     ${happeningFields}
-    body
   }`,
         { slug }
     )
@@ -51,6 +50,7 @@ export async function getPreviewHappeningsBySlug(slug) {
 
 export async function getAllHappeningsWithSlug() {
     const data = await client.fetch(`*[_type == "happening"]{ 'slug': slug.current }`)
+
     return data
 }
 

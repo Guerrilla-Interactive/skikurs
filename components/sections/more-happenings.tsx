@@ -33,10 +33,12 @@ export default function MoreHappenings({ happenings }) {
               coverImage={happening.coverImage}
               slug={happening.slug}
               excerpt={happening.excerpt}
+              time={happening.time}
+              info={happening.infoboxes}
             />
           </SwiperSlide>
         ))}
-
+        <SwiperSlide className="ml-[-2.5vw]"></SwiperSlide>
       </Swiper>
       <div className="ml-[7.5vw]">Se alle arrangementer</div>
 

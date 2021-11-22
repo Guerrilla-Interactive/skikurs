@@ -1,11 +1,16 @@
 import CoverImage from "@components/elements/happening/happening-cover-image";
 import Link from "next/link";
+
 import { imageBuilder } from "@lib/sanity";
+import HappeningPreviewInfo from "./happening-preview-info";
+import Happening from "pages/program/[slug]";
 export default function HappeningPreview({
   title,
   coverImage,
   excerpt,
   slug,
+  info,
+  time,
 }) {
   return (
     <div className="">
@@ -21,9 +26,7 @@ export default function HappeningPreview({
         {/* col 1 */}
 
         <div className="col-span-1 text-left">
-          <div> Tidspunkt</div>
-          <div> Date </div>
-          <div> Where</div>
+          <div> <HappeningPreviewInfo info={info} /></div>
           <button className="px-12 py-4 mt-12 text-white bg-black text-md"> Les mer </button>
         </div>
         <div className="col-span-2 text-left">

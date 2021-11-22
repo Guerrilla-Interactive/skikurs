@@ -7,6 +7,8 @@ export default function AllInfoboxes({ happenings }) {
       {happenings?.map((infobox) => (
         <HappeningInfobox
           key={infobox.key}
+          time={infobox.time}
+          date={infobox.date}
           type={infobox._type}
           title={infobox.heading}
           excerpt={infobox.excerpt}
