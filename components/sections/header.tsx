@@ -16,7 +16,7 @@ export default function Header() {
       <div className="justify-self-end">
         <nav className="grid grid-flow-col gap-24 text-lg text-white">
           <div>Forside</div>
-          <div>Festivalprogram</div>
+          <Link as="/program" href="/program"> Festivalprogram </Link>
           <div>Hva er Spin Off?</div>
           <div>Delta</div>
         </nav>
