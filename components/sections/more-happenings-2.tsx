@@ -12,17 +12,17 @@ export default function MoreHappeningsTwo({ happenings }) {
     return (
         <>
             {happenings.map((happening) => (
-                <div className="max-w-2xl program-item">
-                    <HappeningPreviewTwo
-                        key={happening.slug}
-                        title={happening.title}
-                        coverImage={happening.coverImage}
-                        slug={happening.slug}
-                        excerpt={happening.excerpt}
-                        time={happening.time}
-                        info={happening.infoboxes}
-                    />
-                </div>
+
+                <HappeningPreviewTwo
+                    key={happening.slug}
+                    title={happening.title}
+                    coverImage={happening.coverImage}
+                    slug={happening.slug}
+                    excerpt={happening.excerpt}
+                    time={happening.time}
+                    info={happening.infoboxes}
+                />
+
             ))}
 
         </>
