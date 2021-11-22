@@ -60,6 +60,10 @@
     "where";
 }
 
+.preview-1 * {
+  color: white;
+}
+
 .where {
   grid-area: where;
 }

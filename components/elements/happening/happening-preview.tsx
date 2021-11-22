@@ -13,7 +13,7 @@ export default function HappeningPreview({
   time,
 }) {
   return (
-    <div >
+    <div className="preview-1">
       <div className=" mb-10 w-[80%] bg-transparent">
         <CoverImage
           slug={slug}
@@ -26,7 +26,7 @@ export default function HappeningPreview({
         {/* col 1 */}
 
         <div className="col-span-1 text-left">
-          <div> <HappeningPreviewInfo info={info} /></div>
+          <div > <HappeningPreviewInfo info={info} /></div>
           <button className="px-12 py-4 mt-12 text-white bg-black text-md"> Les mer </button>
         </div>
         <div className="col-span-2 text-left">
