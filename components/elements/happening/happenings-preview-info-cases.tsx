@@ -23,7 +23,7 @@ export default function HappeningPreviewInfoCases({
             );
         default:
             return (
-                ""
+                null
 
             );
     }
