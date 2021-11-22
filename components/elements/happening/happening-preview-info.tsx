@@ -2,7 +2,7 @@ import HappeningPreviewInfoContent from "./happening-preview-info-content";
 
 export default function HappeningPreviewInfo({ info }) {
     return (
-        <div className="grid content-start gap-4 ">
+        <div id="previewGrid" className="grid content-start gap-4 ">
             {info?.map((infoLine) => (
                 <HappeningPreviewInfoContent
                     key={infoLine.key}

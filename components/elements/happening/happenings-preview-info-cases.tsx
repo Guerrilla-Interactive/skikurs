@@ -13,13 +13,13 @@ export default function HappeningPreviewInfoCases({
     switch (targetId) {
         case 'when':
             return (
-                <span>{time} <br /> <span className="text-2xl font-semibold">{date}</span></span>
+                <div className="timeAndDate">{time} <br /> <span className="text-2xl font-semibold">{date}</span></div>
 
             );
         case 'where':
 
             return (
-                <span>{excerpt}</span>
+                <div className="where">{excerpt}</div>
             );
         default:
             return (
