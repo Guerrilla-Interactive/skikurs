@@ -49,7 +49,7 @@ export default function Happening({ happening, moreHappenings, preview }) {
               </section>
 
               {/* Row 2 - Main Info*/}
-              <section className="grid gap-12 s section md:grid-cols-2 ">
+              <section className="grid gap-12 section md:grid-cols-2 ">
 
                 {/* Col 1   */}
                 <AllInfoboxes happenings={happening.infoboxes} />
