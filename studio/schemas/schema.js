@@ -5,10 +5,18 @@ import createSchema from "part:@sanity/base/schema-creator";
 import schemaTypes from "all:part:@sanity/base/schema-type";
 import custompage from "./custom-page";
 
-// 1. Header
-import menu from "./modules/header/menu";
-import header from "./header";
-import menuItem from "./modules/header/menuItem";
+// 0. Layout
+import header from "./global-settings/layout/header";
+import footer from "./global-settings/layout/footer";
+
+// 0.5 Sections
+import globalSection from "./global-settings/sections/global-section";
+import headerSection from "./global-settings/sections/header-section";
+
+// 1. Navigation
+import link from "./modules/navigation/link";
+import navigation from "./modules/navigation/navigation";
+import navItem from "./modules/navigation/navItem";
 
 // 2. Happening
 import happening from "./happening";
@@ -37,10 +45,18 @@ export default createSchema({
     author,
     category,
 
-    // 1. Header
-    menu,
+    // 0. Layout
     header,
-    menuItem,
+    footer,
+
+    // 0.5 Sections
+    globalSection,
+    headerSection,
+
+    // 1. Navigation
+    link,
+    navigation,
+    navItem,
 
     // 2. Happening
     what,

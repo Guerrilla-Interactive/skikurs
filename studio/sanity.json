@@ -1,11 +1,11 @@
 {
   "root": true,
   "api": {
-    "projectId": "r66a5csd",
+    "projectId": "bwnjw1nm",
     "dataset": "production"
   },
   "project": {
-    "name": "Spin Off 20 år",
+    "name": "Oslo Skikurs",
     "basePath": "/studio"
   },
   "plugins": [

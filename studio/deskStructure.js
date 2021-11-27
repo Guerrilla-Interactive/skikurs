@@ -6,7 +6,12 @@ import {
   BsChatSquareQuote,
   BsGear,
   BsCalendar2Event,
+  BsSegmentedNav,
   BsFileEarmarkPlus,
+  BsLayoutWtf,
+  BsBorderTop,
+  BsBorderBottom,
+  BsPlusSquareDotted,
 } from "react-icons/bs";
 
 export default () =>
@@ -24,15 +29,21 @@ export default () =>
         </span>
       )),
 
+      S.divider(),
+
       S.documentTypeListItem("custompage").icon(() => (
         <span>
           <BsFileEarmarkPlus />
         </span>
       )),
+      S.documentTypeListItem("global-section").icon(() => (
+        <span>
+          <BsPlusSquareDotted />
+        </span>
+      )),
 
-      S.divider(),
       S.listItem()
-        .title("Global settings")
+        .title("Global Settings")
         .icon(() => (
           <span>
             <BsGear />
@@ -43,19 +54,54 @@ export default () =>
             .title("What do you want to edit?")
             .items([
               S.listItem()
-                .title("Header")
+                .title("Layout")
                 .icon(() => (
                   <span>
-                    <BsWindow />
+                    <BsLayoutWtf />
                   </span>
                 ))
-                .child(S.document().schemaType("header").documentId("header")),
+                .child(
+                  S.list()
+                    .title("Layout parts")
+                    .items([
+                      S.listItem()
+                        .title("Header")
+                        .icon(() => (
+                          <span>
+                            <BsBorderTop />
+                          </span>
+                        ))
+                        .child(
+                          S.document().schemaType("header").documentId("header")
+                        ),
+
+                      S.listItem()
+                        .title("Footer")
+                        .icon(() => (
+                          <span>
+                            <BsBorderBottom />
+                          </span>
+                        ))
+                        .child(
+                          S.document().schemaType("footer").documentId("footer")
+                        ),
+                    ])
+                ),
+
+              S.documentTypeListItem("navigation").icon(() => (
+                <span>
+                  <BsSegmentedNav />
+                </span>
+              )),
             ])
         ),
       ...S.documentTypeListItems().filter(
         (listItem) =>
           ![
             "footer",
+            "navigation",
+            "header-section",
+            "global-section",
             "story",
             "happening",
             "author",
