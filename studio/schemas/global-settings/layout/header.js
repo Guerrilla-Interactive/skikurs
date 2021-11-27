@@ -5,6 +5,7 @@ export default {
   fields: [
     {
       title: "Choose global section to use",
+      description: 'Global Sections > "The section"',
       name: "headerNav",
 
       type: "reference",
