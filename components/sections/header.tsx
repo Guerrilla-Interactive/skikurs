@@ -1,4 +1,7 @@
 import Link from "next/link";
+import logo from "@images/skikurs-oslo-logo.png"
+import Image from "next/image";
+
 
 export default function Header({
   headerData }) {
@@ -9,12 +12,11 @@ export default function Header({
     <section className="absolute z-10 section-full">
       <section className="grid items-center grid-flow-col pt-10 section">
         {/* Column 1 */}
-        <div>
-          <h2 className="font-bold leading-tight tracking-tight ext-2xl md:text-4xl md:tracking-tighter">
-            <Link href="/">
-              <a className="text-white hover:underline">Skikurs Oslo</a>
-            </Link>
-          </h2>
+        <div className="max-w-[13rem]">
+          <Link href="/">
+            <Image src={logo} />
+          </Link>
+
         </div>
         {/* Column 2 */}
         <div className="justify-self-end">
