@@ -4,8 +4,16 @@ export default function TheSecrets({ title }) {
     return (
         <section className=" text-black  relative z-20 h-[50vh] grid grid-cols-2 section ">
             <div>
-                <div className="w-[20rem] rounded-full h-[20rem] bg-white">
-
+                <div className="p-[5rem] mt-[-3rem] w-[25rem] h-[25rem] rounded-full bg-white">
+                    <h6 className="text-sm">Lær av dem beste</h6>
+                    <h3 className="text-2xl">Sindre Wiig Nordby</h3>
+                    <div>
+                        <ul className="list-disc ">
+                            <li>6 tidligere NM gull</li>
+                            <li>6 tidligere NM gull</li>
+                            <li>6 tidligere NM gull</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
