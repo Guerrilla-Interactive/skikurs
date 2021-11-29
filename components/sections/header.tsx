@@ -6,7 +6,7 @@ export default function Header({
 
   return (
     // Row
-    <section className="bg-blue-800 section-full">
+    <section className="absolute bg-blue-800 section-full">
       <section className="grid items-center grid-flow-col pt-10 section">
         {/* Column 1 */}
         <div>
@@ -20,7 +20,7 @@ export default function Header({
         <div className="justify-self-end">
           <nav className="grid grid-flow-col gap-24 text-lg text-white">
             {headerData.map((link) => (
-              <div><Link href={`/${link.navigationItemUrl.internalLink.slug.current}`}><a> {link.text}</a></Link></div>
+              <div key={link.text}><Link href={`/${link.navigationItemUrl.internalLink.slug.current}`}><a> {link.text}</a></Link></div>
             ))}
           </nav>
         </div>
