@@ -20,8 +20,8 @@ export default function Intro({ title, text }) {
           <h1 className="mb-6 font-bold leading-tight tracking-tighter text-center text-white text-7xl md:leading-none md:text-left">{title}</h1>
           <p className="text-3xl mb-[3rem] text-white">{text}</p>
           <div className="grid-flow-col ">
-            <button className="bg-[#00C5B9] h-[3.5rem] text-white rounded-[1.5rem] px-[4rem] mr-[2rem]">Se kursoversikt</button>
-            <button className=" border-2 h-[3.5rem] text-white rounded-[1.5rem] px-[4rem]">Se ulike ferdighetsnivåer</button>
+            <button className="bg-[#00C5B9] text-2xl h-[4.5rem] text-white rounded-[1.5rem] px-[3.5rem] mr-[1.5rem]">Se kursoversikt</button>
+            <button className=" border-[1px] h-[4.5rem] text-2xl text-white rounded-[1.5rem] px-[3.5rem]">Se ulike ferdighetsnivåer</button>
           </div>
         </div>
       </div>
