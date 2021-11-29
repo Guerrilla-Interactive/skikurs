@@ -1,28 +1,29 @@
 import { CMS_NAME, CMS_URL } from "@lib/constants";
+import Image from "next/image";
+import sindre from "@images/sindre.png"
+import Snow from "@components/elements/backgrounds/snow";
 
-export default function Intro() {
+export default function Intro({ title, text }) {
   return (
-    <section className="flex flex-col items-center mt-16 mb-16 md:flex-row md:justify-between md:mb-12">
-      <h1 className="text-6xl font-bold leading-tight tracking-tighter md:text-8xl md:pr-8">
-        Logo
-      </h1>
-      <h4 className="mt-5 text-lg text-center md:text-left md:pl-8">
-        A statically generated blog example using{" "}
-        <a
-          href="https://nextjs.org/"
-          className="underline transition-colors duration-200 hover:text-success"
-        >
-          Next.js
-        </a>{" "}
-        and{" "}
-        <a
-          href={CMS_URL}
-          className="underline transition-colors duration-200 hover:text-success"
-        >
-          Sanity.io
-        </a>
-        .
-      </h4>
+    <section className="bg-blue-900 section-full grid h-[60rem] content-center relative">
+      <section className="z-10 grid justify-end section">
+        <div className="max-w-2xl mr-[15vw]">
+          <h1 className="mb-6 font-bold leading-tight tracking-tighter text-center text-white text-7xl md:leading-none md:text-left">{title}</h1>
+          <p className="text-3xl text-white">{text}</p>
+        </div>
+      </section>
+      <div className="absolute w-[40%] bottom-[-15vh] z-10 ">
+        <Image
+          src={sindre}
+          alt="Picture of the author"
+          className="absolute bottom-0"
+          width={900}
+          height={1000}
+          layout="responsive"
+        />
+      </div>
+
+      <div> <Snow /> </div>
     </section>
   );
 }

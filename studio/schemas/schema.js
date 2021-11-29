@@ -18,6 +18,9 @@ import link from "./modules/navigation/link";
 import navigation from "./modules/navigation/navigation";
 import navItem from "./modules/navigation/navItem";
 
+// 2. Post types
+import course from "./post-types/course/course";
+
 // 2. Happening
 import happening from "./happening";
 import what from "./modules/infoboxes/what";
@@ -57,6 +60,9 @@ export default createSchema({
     link,
     navigation,
     navItem,
+
+    // 2. Post types
+    course,
 
     // 2. Happening
     what,

@@ -11,6 +11,7 @@ export default {
       type: "string",
       title: "Navigation Text",
     },
+
     {
       name: "navigationItemUrl",
       type: "link",

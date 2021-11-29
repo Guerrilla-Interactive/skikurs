@@ -12,6 +12,7 @@ import {
   BsBorderTop,
   BsBorderBottom,
   BsPlusSquareDotted,
+  BsCardList,
 } from "react-icons/bs";
 
 export default () =>
@@ -26,6 +27,11 @@ export default () =>
       S.documentTypeListItem("story").icon(() => (
         <span>
           <BsChatSquareQuote />
+        </span>
+      )),
+      S.documentTypeListItem("course").icon(() => (
+        <span>
+          <BsCardList />
         </span>
       )),
 
@@ -99,6 +105,7 @@ export default () =>
         (listItem) =>
           ![
             "footer",
+            "course",
             "navigation",
             "header-section",
             "global-section",

@@ -36,6 +36,21 @@ const getUniqueHappenings = (happenings) => {
 
 
 
+
+
+export async function getNavigation(preview) {
+    const results = await getClient(preview)
+        .fetch(`*[_id == 'header'][0] {
+            'sections': *[_type == 'custompage'] {
+                title,
+                slug
+                }
+      }`)
+    return getUniqueHappenings(results)
+}
+
+
+
 export async function getPreviewHappeningsBySlug(slug) {
     const data = await getClient(true).fetch(
         `*[_type == "happening" && slug.current == $slug] | order(publishedAt desc){

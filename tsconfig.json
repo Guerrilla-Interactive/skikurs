@@ -33,6 +33,12 @@
       ],
       "@styles/*": [
         "styles/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@images/*": [
+        "assets/images/*"
       ]
       
     },
