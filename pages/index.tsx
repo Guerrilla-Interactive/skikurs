@@ -18,19 +18,15 @@ export default function Index({ preview, headerData }) {
         </Head>
         <Container>
           <Intro title="Norges beste skikurs" text="Dra på skikurs med den instruktøren i Norge som har flest 5-stjerners reviews på Facebook og Google i Norge." />
-
           <section className="">
             <div className="mt-[22.5rem]">
             </div>
           </section>
-
-
         </Container>
       </Layout>
     </>
   );
 }
-
 
 
 export async function getStaticProps({ preview = false }) {
@@ -39,7 +35,6 @@ export async function getStaticProps({ preview = false }) {
 
   // Custom API Fetches
   const headerData = await getHeaderData();
-
 
   return {
     props: { preview, headerData },
