@@ -2,22 +2,24 @@
 
 export default function TheSecrets({ title }) {
     return (
-        <section className=" text-black  relative z-20 h-[50vh] grid grid-cols-2 section ">
-            <div>
+        <section className="relative z-20 grid grid-cols-12 mb-[10rem] text-black section">
+            <div className="col-span-7 ">
                 <div className="p-[5rem] mt-[-3rem] w-[25rem] h-[25rem] rounded-full bg-white">
                     <h6 className="text-sm">Lær av dem beste</h6>
                     <h3 className="text-2xl">Sindre Wiig Nordby</h3>
-                    <div>
-                        <ul className="list-disc ">
-                            <li>6 tidligere NM gull</li>
-                            <li>6 tidligere NM gull</li>
-                            <li>6 tidligere NM gull</li>
-                        </ul>
-                    </div>
+
+                    <ul className="leading-9 list-disc mt-[1rem] text-lg list-inside mb-[1rem]">
+                        <li>6 tidligere NM gull</li>
+                        <li>trener landslagsløpere</li>
+                        <li>15 års erfaring</li>
+                    </ul>
+
+                    <a className="underline cursor-pointer">Les mer om Sindre Wiig Nordby</a>
+
                 </div>
 
             </div>
-            <div className="grid content-start max-w-2xl gap-6">
+            <div className="grid content-start w-[32.5rem] max-w-2xl gap-6 cols-span-5">
                 <h3 className="text-2xl">{title}</h3>
                 <p className="text-lg">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.

@@ -6,6 +6,7 @@ import { getHeaderData } from "@lib/api/navigation/navigation";
 
 import Intro from "@components/sections/intro";
 import TheSecrets from "@components/sections/theSecrets";
+import SkillLevels from "@components/sections/skill-levels";
 
 
 export default function Index({ preview, headerData }) {
@@ -20,6 +21,7 @@ export default function Index({ preview, headerData }) {
         <Container>
           <Intro title="Norges beste skikurs" text="Dra på skikurs med den instruktøren i Norge som har flest 5-stjerners reviews på Facebook og Google i Norge." />
           <TheSecrets title="Lær hemmlighetene" />
+          <SkillLevels title="For alle ferdighetsnivåer" />
           <section className="">
             <div className="mt-[22.5rem]">
             </div>
