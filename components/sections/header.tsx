@@ -6,7 +6,7 @@ export default function Header({
 
   return (
     // Row
-    <section className="absolute z-10 bg-blue-800 section-full">
+    <section className="absolute z-10 section-full">
       <section className="grid items-center grid-flow-col pt-10 section">
         {/* Column 1 */}
         <div>

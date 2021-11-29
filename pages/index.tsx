@@ -5,6 +5,7 @@ import { SITE_NAME } from "@lib/constants";
 import { getHeaderData } from "@lib/api/navigation/navigation";
 
 import Intro from "@components/sections/intro";
+import TheSecrets from "@components/sections/theSecrets";
 
 
 export default function Index({ preview, headerData }) {
@@ -18,6 +19,7 @@ export default function Index({ preview, headerData }) {
         </Head>
         <Container>
           <Intro title="Norges beste skikurs" text="Dra på skikurs med den instruktøren i Norge som har flest 5-stjerners reviews på Facebook og Google i Norge." />
+          <TheSecrets title="Lær hemmlighetene" />
           <section className="">
             <div className="mt-[22.5rem]">
             </div>
