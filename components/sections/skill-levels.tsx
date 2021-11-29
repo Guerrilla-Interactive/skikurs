@@ -7,13 +7,13 @@ import skill3 from "@images/skill-3.png"
 
 export default function SkillLevels({ title }) {
     return (
-        <section className="relative z-20 grid text-black section px-[4rem]">
+        <section className="relative z-20 grid text-black section px-[4rem] mb-[15.5rem]">
             <h2 className="text-5xl text-center mb-[5rem] font-light">For alle ferdighetsnivåer</h2>
             <div className="grid gap-16 lg:grid-cols-3">
 
 
 
-                <div className="bg-gray-200  rounded-[4rem] overflow-hidden">
+                <div className="bg-gray-200  rounded-[4rem] overflow-hidden shadow-sm">
                     <div className="max-h-[23.5rem] bg-gray-300 overflow-hidden">
                         <Image src={skill} layout="responsive" />
                     </div>
@@ -25,7 +25,7 @@ export default function SkillLevels({ title }) {
                     </div>
                 </div>
 
-                <div className="bg-gray-200  rounded-[4rem] overflow-hidden">
+                <div className="bg-gray-200  rounded-[4rem] overflow-hidden shadow-sm">
                     <div className="max-h-[23.5rem] bg-gray-300 overflow-hidden">
                         <Image src={skill2} layout="responsive" />
                     </div>
@@ -37,7 +37,7 @@ export default function SkillLevels({ title }) {
                     </div>
                 </div>
 
-                <div className="bg-gray-200  rounded-[4rem] overflow-hidden">
+                <div className="bg-gray-200  rounded-[4rem] overflow-hidden shadow-sm">
                     <div className="max-h-[23.5rem] bg-gray-300 overflow-hidden">
                         <Image src={skill3} layout="responsive" />
                     </div>

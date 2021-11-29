@@ -20,7 +20,7 @@ export default function Header({
         </div>
         {/* Column 2 */}
         <div className="justify-self-end">
-          <nav className="grid grid-flow-col gap-24 text-lg text-white">
+          <nav className="grid grid-flow-col gap-24 text-2xl text-white">
             {headerData.map((link) => (
               <div key={link.text}><Link href={`/${link.navigationItemUrl.internalLink.slug.current}`}><a> {link.text}</a></Link></div>
             ))}

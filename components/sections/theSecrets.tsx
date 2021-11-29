@@ -20,7 +20,7 @@ export default function TheSecrets({ title }) {
 
             </div>
             <div className="grid content-start max-w-2xl col-span-5 gap-10">
-                <h3 className="text-3xl">{title}</h3>
+                <h3 className="text-4xl font-light">{title}</h3>
                 <p className="text-2xl">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
                 </p>
