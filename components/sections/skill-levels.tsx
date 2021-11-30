@@ -7,8 +7,8 @@ import skill3 from "@images/skill-3.png"
 
 export default function SkillLevels({ title }) {
     return (
-        <section className="relative z-20 grid text-black section px-[4rem] mb-[15.5rem]">
-            <h2 className="text-5xl text-center mb-[5rem] font-light">For alle ferdighetsnivåer</h2>
+        <section className="relative z-20 grid text-black section mb-[15.5rem]">
+            <h2 className="text-5xl text-center mb-[5rem] font-light">{title}</h2>
             <div className="grid gap-16 lg:grid-cols-3">
 
 

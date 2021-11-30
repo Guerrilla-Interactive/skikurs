@@ -8,6 +8,7 @@ import Intro from "@components/sections/intro";
 import TheSecrets from "@components/sections/theSecrets";
 import SkillLevels from "@components/sections/skill-levels";
 import AboutSindre from "@components/sections/aboutSindre";
+import ReviewSection from "@components/sections/reviewSection";
 
 
 export default function Index({ preview, headerData }) {
@@ -23,7 +24,9 @@ export default function Index({ preview, headerData }) {
           <Intro title="Norges beste skikurs" text="Dra på skikurs med den instruktøren i Norge som har flest 5-stjerners reviews på Facebook og Google i Norge." />
           <TheSecrets title="Lær hemmlighetene" />
           <SkillLevels title="For alle ferdighetsnivåer" />
-          <AboutSindre />
+          <AboutSindre title="En hilsen fra Sindre, instruktøren" />
+          <ReviewSection title="Vi har over 500 tilbakemeldinger" />
+
           <section className="">
             <div className="mt-[22.5rem]">
             </div>

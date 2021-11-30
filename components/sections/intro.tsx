@@ -5,7 +5,7 @@ import Snow from "@components/elements/backgrounds/snow";
 
 export default function Intro({ title, text }) {
   return (
-    <section className="relative bg-blue-900 section-full">
+    <section className="relative bg-[#002683] section-full">
       <div className="grid grid-cols-12 max-h-[calc(20vh+50rem)] content-center h-[calc(20vh+50rem)] section-full-limited ">
         <div className="md:ml-[-20rem] xl:ml-[-15rem] 3xl:ml-[0]  w-[70rem] col-span-5 mb-[-30vh] 2xl:bottom-[10rem] bottom-[-10vh] z-10 ">
           <Image
