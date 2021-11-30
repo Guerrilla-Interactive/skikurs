@@ -9,7 +9,7 @@ export default function SkillLevels({ title }) {
     return (
         <section className="relative z-20 grid lg:grid-cols-12 text-black section-full-contained mb-[15.5rem]">
             <h2 className="text-5xl text-center mb-[5rem] font-light col-span-full">{title}</h2>
-            <div className="grid col-start-2 col-end-11 gap-16 lg:grid-cols-3">
+            <div className="grid col-start-2 col-end-12 gap-16 lg:grid-cols-3">
                 <div className="bg-gray-200  rounded-[4rem] overflow-hidden shadow-sm">
                     <div className="max-h-[23.5rem] bg-gray-300 overflow-hidden">
                         <Image src={skill} layout="responsive" />
