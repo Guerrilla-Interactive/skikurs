@@ -10,16 +10,16 @@ export default function Header({
   return (
     // Row
     <section className="absolute z-10 section-full">
-      <section className="grid items-center grid-flow-col pt-10 section">
+      <section className="grid items-center grid-cols-12 pt-10 section-full-contained">
         {/* Column 1 */}
-        <div className="max-w-[13rem]">
+        <div className="max-w-[13rem] col-start-2 col-end-4">
           <Link href="/">
             <Image src={logo} />
           </Link>
 
         </div>
         {/* Column 2 */}
-        <div className="justify-self-end">
+        <div className="col-span-8 col-start-auto justify-self-end">
           <nav className="grid grid-flow-col gap-24 text-2xl text-white">
             {headerData.map((link) => (
               <div key={link.text}><Link href={`/${link.navigationItemUrl.internalLink.slug.current}`}><a> {link.text}</a></Link></div>

@@ -55,9 +55,16 @@ html {
   margin-right: auto;
 }
 
-.section-full-limited {
+.section-full-contained {
   width: 100vw;
   max-width: 2600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-full-limited {
+  width: 100vw;
+  max-width: 5000px;
   margin-left: auto;
   margin-right: auto;
 }

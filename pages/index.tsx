@@ -9,6 +9,7 @@ import TheSecrets from "@components/sections/theSecrets";
 import SkillLevels from "@components/sections/skill-levels";
 import AboutSindre from "@components/sections/aboutSindre";
 import ReviewSection from "@components/sections/reviewSection";
+import TheReviewsSection from "@components/sections/theReviewsSection";
 
 
 export default function Index({ preview, headerData }) {
@@ -26,6 +27,7 @@ export default function Index({ preview, headerData }) {
           <SkillLevels title="For alle ferdighetsnivåer" />
           <AboutSindre title="En hilsen fra Sindre, instruktøren" />
           <ReviewSection title="Vi har over 500 tilbakemeldinger" />
+          <TheReviewsSection />
 
           <section className="">
             <div className="mt-[22.5rem]">
