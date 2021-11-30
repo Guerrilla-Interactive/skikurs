@@ -16,7 +16,7 @@ export default function Intro({ title, text }) {
           />
         </div>
 
-        <div className="grid col-start-6 col-end-12 content-start mt-[calc(5vh+2rem)] gap-3 ">
+        <div className="grid col-start-7 col-end-12 content-start mt-[calc(5vh+2rem)] gap-3 ">
           <h1 className="mb-6 font-bold leading-tight tracking-tighter text-center text-white text-7xl md:leading-none md:text-left">{title}</h1>
           <p className="text-3xl mb-[3rem] max-w-2xl text-white">{text}</p>
           <div className="grid justify-start grid-flow-col ">
