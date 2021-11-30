@@ -72,7 +72,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-  overflow-y: clip;
+  overflow-y: initial;
 }
 
 .section-full-contained {
@@ -80,6 +80,7 @@ html {
   max-width: 2600px;
   margin-left: auto;
   margin-right: auto;
+  overflow-y: initial;
 }
 
 .section-full-limited {
@@ -88,7 +89,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-  overflow-y: clip;
+  overflow-y: initial;
 }
 
 .section-full {
@@ -96,7 +97,7 @@ html {
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
-  overflow-y: clip;
+  overflow-y: initial;
 }
 
 #previewGrid {
