@@ -6,8 +6,8 @@ import Snow from "@components/elements/backgrounds/snow";
 export default function Intro({ title, text }) {
   return (
     <section className="relative bg-[#002683] section-full">
-      <div className="grid grid-cols-12 max-h-[calc(20vh+50rem)] content-center h-[calc(20vh+50rem)] section-full-limited ">
-        <div className="md:ml-[-10rem] xl:ml-[-5rem] 3xl:ml-[0] w-[60rem] col-span-5 mb-[-30vh] 2xl:bottom-[10rem] bottom-[-10vh] z-10 ">
+      <div className="grid grid-cols-12 max-h-[calc(20vh+50rem)] content-center h-[calc(20vh+50rem)] section-full-contained ">
+        <div className="md:ml-[-10rem] xl:ml-[-5rem] 3xl:ml-[0] w-[60rem] col-start-1  col-end-5 mb-[-30vh] 2xl:bottom-[10rem] bottom-[-10vh] z-10 ">
           <Image
             src={sindre}
             alt="Picture of the author"
