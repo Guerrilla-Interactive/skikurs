@@ -4,7 +4,7 @@ import Stars from "@components/elements/backgrounds/stars";
 
 export default function TheReviewsSection({ }) {
     return (
-        <section className="grid relative grid-cols-12  section-full-contained mt-[-5rem] z-30">
+        <section className="grid relative grid-cols-12  section-full-contained mt-[-3rem] z-30">
             <div className="grid grid-flow-col col-start-2 gap-24 ">
 
                 <div className="min-h-[25rem] p-[3.5rem] bg-white rounded-[4rem] w-[40rem]  ">

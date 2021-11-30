@@ -21,7 +21,7 @@ export default function Intro({ title, text }) {
           <p className="text-3xl mb-[3rem] max-w-2xl text-white">{text}</p>
           <div className="grid justify-start grid-flow-col ">
             <button className="bg-[#00C5B9] text-xl h-[4.5rem] text-white rounded-[1.5rem] px-[3.5rem] mr-[1.5rem]">Se kursoversikt</button>
-            <button className=" border-[1px] h-[4.5rem] text-xl text-white rounded-[1.5rem] px-[3.5rem]">Ulike ferdighetsnivåer</button>
+            <button className=" border-[1px] h-[4.5rem] text-xl text-white rounded-[1.5rem] px-[3.5rem]">Ferdighetsnivåer</button>
           </div>
         </div>
       </div>

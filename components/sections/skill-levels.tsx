@@ -18,7 +18,7 @@ export default function SkillLevels({ title }) {
                         <h3 className="text-3xl pt-[2.5rem]"> Nybegynner</h3>
                         <h5 className="text-2xl text-gray-400 pt-[0.5rem]"> 4-8 deltakere</h5>
                         <p className="text-xl  pt-[1.5rem] mb-[2rem]"> Du har aldri gått på ski før, evt mindre enn 5 skiturer.</p>
-                        <button className=" border-[1px] border-black h-[4.5rem] text-2xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
+                        <button className=" border-[1px] border-black h-[4.5rem] text-xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@ export default function SkillLevels({ title }) {
                         <h3 className="text-3xl pt-[2.5rem]"> Nybegynner</h3>
                         <h5 className="text-2xl text-gray-400 pt-[0.5rem]"> 4-8 deltakere</h5>
                         <p className="text-xl  pt-[1.5rem] mb-[2rem]"> Du har aldri gått på ski før, evt mindre enn 5 skiturer.</p>
-                        <button className=" border-[1px] border-black h-[4.5rem] text-2xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
+                        <button className=" border-[1px] border-black h-[4.5rem] text-xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@ export default function SkillLevels({ title }) {
                         <h3 className="text-3xl pt-[2.5rem]"> Nybegynner</h3>
                         <h5 className="text-2xl text-gray-400 pt-[0.5rem]"> 4-8 deltakere</h5>
                         <p className="text-xl  pt-[1.5rem] mb-[2rem]"> Du har aldri gått på ski før, evt mindre enn 5 skiturer.</p>
-                        <button className=" border-[1px] border-black h-[4.5rem] text-2xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
+                        <button className=" border-[1px] border-black h-[4.5rem] text-xl rounded-[1.5rem] px-[4rem] mb-[3.5rem]">Les mer</button>
                     </div>
                 </div>
 
