@@ -27,7 +27,8 @@ export default function Meta() {
         href="/favicon/safari-pinned-tab.svg"
         color="#000000"
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
 
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="msapplication-TileColor" content="#000000" />
@@ -39,6 +40,7 @@ export default function Meta() {
         content={`A statically generated blog example using Next.js and Sanity.io.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   );
 }
