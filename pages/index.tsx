@@ -10,6 +10,9 @@ import SkillLevels from "@components/sections/skill-levels";
 import AboutSindre from "@components/sections/aboutSindre";
 import ReviewSection from "@components/sections/reviewSection";
 import TheReviewsSection from "@components/sections/theReviewsSection";
+import PracticalInfo from "@components/sections/practicalInfo";
+import GiftCardSection from "@components/sections/giftcardSection";
+import Footer from "@components/sections/footer";
 
 
 export default function Index({ preview, headerData }) {
@@ -28,11 +31,8 @@ export default function Index({ preview, headerData }) {
           <AboutSindre title="En hilsen fra Sindre, instruktøren" />
           <ReviewSection title="Vi har over 500 tilbakemeldinger" />
           <TheReviewsSection />
-
-          <section className="">
-            <div className="mt-[22.5rem]">
-            </div>
-          </section>
+          <PracticalInfo title="Praktisk informasjon" />
+          <GiftCardSection title="Et gavekort, hundre følelser" />
         </Container>
       </Layout>
     </>

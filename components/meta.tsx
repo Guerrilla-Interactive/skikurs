@@ -29,6 +29,10 @@ export default function Meta() {
       />
 
 
+      <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet"
+      />
 
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="msapplication-TileColor" content="#000000" />

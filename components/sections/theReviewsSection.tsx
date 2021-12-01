@@ -4,7 +4,7 @@ import Stars from "@components/elements/backgrounds/stars";
 
 export default function TheReviewsSection({ }) {
     return (
-        <section className="grid relative grid-cols-12  section-full-contained mt-[-3rem] z-30">
+        <section className="grid  mb-[10rem] relative grid-cols-12  section-full-contained mt-[-3rem] z-30">
             <div className="grid grid-flow-col col-start-2 gap-24 ">
 
                 <div className="min-h-[25rem] p-[3.5rem] bg-white rounded-[4rem] w-[40rem]  ">
@@ -49,7 +49,7 @@ export default function TheReviewsSection({ }) {
 
                 </div>
 
-                <div className="min-h-[25rem] p-[3.5rem] bg-white rounded-[4rem] w-[40rem]  ">
+                <div className="min-h-[25rem] p-[3.5rem] bg-white rounded-[4rem] w-[40rem]   ">
                     <div className="grid items-center content-center justify-start grid-cols-12 gap-12">
                         <div className="col-start-1 col-end-3 w-[5rem] rounded-full  h-[5rem] bg-gray-300"></div>
                         <div className="ml-[1rem] col-start-3 col-end-9 text-2xl">Sabine Randoll</div>
